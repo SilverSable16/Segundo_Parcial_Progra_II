@@ -111,7 +111,7 @@ public int getId() {
          cn = new Conexion();
          cn.abrir_conexion();
          String query;
-        query = "update clientes set nit = ?,nombres= ?,apellidos= ?,direccion= ?,telefono= ?,fecha_nacimiento= ? "+
+        query = "update clientes set nit = ?,nombres= ?,apellidos= ?,direccion= ?,telefono= ?, genero=?, email=?,fecha_nacimiento= ? "+
                  "where id_cliente = ?";
          parametro  = (PreparedStatement) cn.conexionBD.prepareStatement(query);
          parametro.setString(1, getCarnet());
