@@ -52,7 +52,7 @@ public int getId() {
       String encabezado[] = {"id","carnet","Nombres","Apellidos","Direccion","Telefono","Nacimiento"};
       tabla.setColumnIdentifiers(encabezado);
       
-      String datos[]=new String[7];
+      String datos[]=new String[9];
       
    while(consulta.next()){
       datos[0] = consulta.getString("id");
